@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <dx-button text="hola"></dx-button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <dx-data-grid [dataSource]="agentes"
+                    (onRowUpdating)="onRowUpdating($event)"
+                    (onRowUpdated)="onRowUpdated($event)">
+        <dxo-editing mode="row"
+                     [allowUpdating]="true"
+                     [allowDeleting]="true"
+                     [allowAdding]="true"></dxo-editing>
+      </dx-data-grid>
+    </div>
+  </div>
+</div>
