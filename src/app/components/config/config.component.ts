@@ -39,7 +39,7 @@ export class ConfigComponent implements OnInit {
     },
     err => {
       alert(err);
-    })
+    });
   }
 
   anyadirToken() {
