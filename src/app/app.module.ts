@@ -12,6 +12,8 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
 import { DxButtonModule, DxDataGridModule } from 'devextreme-angular';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CrearAgenteComponent } from './components/agentes/crear-agente/crear-agente.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { TableModule } from 'primeng/table';
     HeaderComponent,
     ConfigComponent,
     AgentesComponent,
-    ProductosComponent
+    ProductosComponent,
+    CrearAgenteComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { TableModule } from 'primeng/table';
     DxButtonModule,
     DxDataGridModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    ReactiveFormsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

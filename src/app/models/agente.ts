@@ -1,3 +1,4 @@
 export class Agente {
-    constructor(public idAgente: number, public nombre: string, public administrador: boolean) {}
+    public idAgente: number; public nombre: string; public administrador: boolean;
+    constructor() {}
 }

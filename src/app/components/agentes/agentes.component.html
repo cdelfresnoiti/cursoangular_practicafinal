@@ -1,11 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <dx-button text="hola"></dx-button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
       <dx-data-grid [dataSource]="agentes"
                     (onRowUpdating)="onRowUpdating($event)"
                     (onRowUpdated)="onRowUpdated($event)">

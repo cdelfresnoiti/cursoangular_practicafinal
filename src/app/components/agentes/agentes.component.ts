@@ -19,19 +19,12 @@ export class AgentesComponent implements OnInit {
 
   loadAgentes() {
     this.agentesService.getAgentes().subscribe(ret => {
-this.agentes = ret;
+      this.agentes = ret;
     });
   }
 
   onRowUpdating(data) {
     console.log(data);
-    if (data.key.nombre === 'Matías2') {
-      console.log('Cancelamos evento');
-      data.cancel = true;
-    }
-    else{
-      console.log('Continuamos evento');
-    }
   }
 
   onRowUpdated(data) {
